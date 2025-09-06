@@ -1,0 +1,23 @@
+{
+  "name": "prescripto-medical-app",
+  "version": "1.0.0",
+  "description": "Medical appointment booking system with patient frontend, admin panel, and backend API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run admin\"",
+    "backend": "cd backend && npm run server",
+    "frontend": "cd frontend && npm run dev",
+    "admin": "cd admin && npm run dev",
+    "build": "npm run build:frontend && npm run build:admin",
+    "build:frontend": "cd frontend && npm run build",
+    "build:admin": "cd admin && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["medical", "appointment", "booking", "react", "express", "mongodb"],
+  "author": "Prince",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
