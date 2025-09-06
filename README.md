@@ -2,6 +2,14 @@
 
 A comprehensive medical appointment booking system with separate interfaces for patients, doctors, and administrators.
 
+### Deployed Application
+
+The application is deployed and accessible at the following URLs:
+
+- *Backend API*:(https://prescripto-api.onrender.com)
+- *Frontend*: (https://prescripto-app.vercel.app)
+- *Admin Panel*:(https://prescripto-admin.vercel.app)
+
 ## Project Structure
 
 ```
@@ -43,9 +51,9 @@ prescripto/
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js
 - MongoDB
-- Cloudinary account (for image uploads)
+- Cloudinary account
 
 ### Installation
 
@@ -125,26 +133,4 @@ prescripto/
 - **File Upload:** Cloudinary
 - **Authentication:** JWT tokens
 
-## Development
 
-The project uses Vite for fast development with hot module replacement. Both frontend and admin have proxy configuration to communicate with the backend API seamlessly.
-
-## Production Deployment
-
-1. Build the frontend and admin:
-
-   ```bash
-   npm run build
-   ```
-
-2. Start the backend server:
-   ```bash
-   npm start
-   ```
-
-## Troubleshooting
-
-- **Port conflicts:** Make sure ports 4000, 5173, and 5174 are available
-- **CORS issues:** Check that the backend CORS configuration includes your frontend URLs
-- **Database connection:** Verify MongoDB connection string in `.env`
-- **File uploads:** Ensure Cloudinary credentials are correctly configured
